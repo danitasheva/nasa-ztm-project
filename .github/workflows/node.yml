@@ -9,8 +9,8 @@ jobs:
     env:
       CI: true
       strategy:
-      matrix:
-        node-version: 20
+        matrix:
+          node-version: [18.x, 20.x]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
